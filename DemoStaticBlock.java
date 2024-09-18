@@ -28,7 +28,7 @@ public class DemoStaticBlock {
         obj1.price = 17000;
         Mobile.type = "Smart Phone";
 
-        Mobile obj2 = new Mobile();
+        // Mobile obj2 = new Mobile();  // getting warning on this line that's commenting it
         
     }
 }
