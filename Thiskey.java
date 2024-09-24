@@ -16,6 +16,7 @@ class Human{
     //      obj1.age = age;
     //  }
 
+    // Using default object (this keyword)
     public void setAge(int age){
              this.age = age;
     }
