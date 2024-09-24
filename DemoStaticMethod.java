@@ -1,4 +1,4 @@
-class Mobile {
+class Mob{
     String brand;
     int price;
     static String type;
@@ -7,34 +7,34 @@ class Mobile {
         System.out.println(brand + " : " + price + " : " + type);
     }
     
-    public static void show1(Mobile obj) {
+    public static void show1(Mob obj) {
         System.out.println(obj.brand + " : " + obj.price + " : " + type);
     }
 }
 
 public class DemoStaticMethod {
     public static void main(String a[]) {
-        Mobile obj1 = new Mobile();
+        Mob obj1 = new Mob();
         obj1.brand = "IPhone";
         obj1.price = 17000;
         // obj1.type = "Smart Phone";
-        Mobile.type = "Smart Phone";
+        Mob.type = "Smart Phone";
 
-        Mobile obj2 = new Mobile();
+        Mob obj2 = new Mob();
         obj2.brand = "Samsung";
         obj2.price = 15000;
         // obj2.type = "Smart Phone";
-        Mobile.type = "Smart Phone";
+        Mob.type = "Smart Phone";
 
-        Mobile obj3 = new Mobile();
+        Mob obj3 = new Mob();
         obj3.brand = "Nokia";
         obj3.price = 5000;
-        Mobile.type = "Phone";
+        Mob.type = "Phone";
 
         obj1.show();
         obj2.show();
         obj3.show();
         System.out.println("--------------- Static Method ----------------------");
-        Mobile.show1(obj1);
+        Mob.show1(obj1);
     }
 }

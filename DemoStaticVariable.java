@@ -1,4 +1,4 @@
-class Mobile {
+class Mobile1 {
     String brand;
     int price;
     static String type;
@@ -10,22 +10,22 @@ class Mobile {
 
 public class DemoStaticVariable {
     public static void main(String a[]) {
-        Mobile obj1 = new Mobile();
+        Mobile1 obj1 = new Mobile1();
         obj1.brand = "IPhone";
         obj1.price = 17000;
         // obj1.type = "Smart Phone";
-        Mobile.type = "Smart Phone";
+        Mobile1.type = "Smart Phone";
 
-        Mobile obj2 = new Mobile();
+        Mobile1 obj2 = new Mobile1();
         obj2.brand = "Samsung";
         obj2.price = 15000;
         // obj2.type = "Smart Phone";
-        Mobile.type = "Smart Phone";
+        Mobile1.type = "Smart Phone";
 
-        Mobile obj3 = new Mobile();
+        Mobile1 obj3 = new Mobile1();
         obj3.brand = "Nokia";
         obj3.price = 5000;
-        Mobile.type = "Phone";
+        Mobile1.type = "Phone";
 
         obj1.show();
         obj2.show();
