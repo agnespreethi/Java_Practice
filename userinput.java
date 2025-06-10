@@ -5,12 +5,12 @@ public class userinput {
         Scanner input = new Scanner(System.in);
 
         // output
-        System.out.println("Enter a floating point value :");
+        System.out.print("Enter a floating point value :");
 
         // wait for the user to enter something
         double value = input.nextDouble();
 
         // tell the user what was entered
-        System.out.println("You have entered :" + value);
+        System.out.print("You have entered :" + value);
     }
 }
