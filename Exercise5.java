@@ -6,6 +6,7 @@ Scanner input = new Scanner(System.in);
 String again = "y";
     // TODO: Use a while loop to keep calculating while 'again' is 'y'
     while (again.equalsIgnoreCase("y")) {
+   
     // TODO: Ask user for two numbers
         System.out.print("Enter first number: ");
         double num1 = input.nextDouble();
@@ -16,6 +17,7 @@ String again = "y";
     // TODO: Ask user for the operation (+, -, *, /)
         System.out.print("Choose operation (+, -, *, /): ");
         char operation = input.next().charAt(0);
+    
     // TODO: Use if-else to perform the operation
         double result;
         boolean validOperation = true;
@@ -30,6 +32,7 @@ String again = "y";
             result = num1 * num2;
             System.out.println("Result: " + result);
         }
+    
     // TODO: Handle division by zero case
         else if (operation == '/') {
             if (num2 == 0) {
@@ -48,6 +51,7 @@ String again = "y";
         System.out.print("Do you want to calculate again? (y/n): ");
         again = input.next();
     }
+    
     // TODO: Exit the loop and print a thank you message
      System.out.println("Thank you for using the calculator.");
      input.close();
