@@ -4,8 +4,10 @@ class Huma {
     private int age;
 
     public Huma() {
-        int age = 12;
-        String name = "Mary";
+        
+        System.out.println("In Constructor.........");
+        age = 12;
+        name = "Rinika";
     }
 
     public int getAge() {
@@ -20,7 +22,7 @@ class Huma {
         return name;
     }
 
-    public void setAge(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -29,7 +31,10 @@ class Huma {
 public class Cons {
     public static void main(String[] args) {
         Huma obj = new Huma();
-        Huma obj1 = new Huma();
+        // Huma obj1 = new Huma();
         System.out.println(obj.getName() + " : " + obj.getAge());
+
+        // obj.setAge(30);
+        // obj.setName("Stephen");
     }
 }
