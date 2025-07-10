@@ -13,13 +13,13 @@ class X {
 class Y extends X {
     public Y() {
         super();
-        //super(5); ->print sub class default constructor and super class parameterized constructor
+       // super(5); //->print sub class default constructor and super class parameterized constructor
         System.out.println("Sub Class Y");
     }
 
     public Y(int n) {
-        super(n);
-        //this(); ->instead of super using this print both defalut constructor and
+        // super(n);
+        this(); // ->instead of super using this print both defalut constructor and
         // sub class parameterized constructor
         System.out.println("Sub Class int Y");
     }
